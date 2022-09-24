@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:lightskyblue;
+    }
+
+    h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: blue;
+        text-align: center;
+    }
+    /* visible height= 64px+2+2+16+16=100px */
+.one{
+    border: 2px solid red;
+    height: 64px;
+    width: 64px;
+    background-color:chocolate;
+    margin-bottom: 1rem;
+    padding: 16px;
+}
+/* height width->given by user = visible height width */
+.border-box{
+    box-sizing: border-box;
+    border: 2px solid red;
+    height: 64px;
+    width: 64px;
+    background-color:chocolate;
+    margin-bottom: 1rem;
+    padding: 16px;
+}
+.withnothing{
+    border: 2px solid red;
+    height: 64px;
+    width: 64px;
+    background-color:chocolate;
+    margin-bottom: 1rem;
+    padding: 16px;
+}
+
+</style>
+<body>
+    <h1>Hello Box Sizing</h1>
+    <div class="one">1</div>
+    <div class="border-box">1</div>
+    <div class="withnothing">1</div>
+</body>
+</html>
